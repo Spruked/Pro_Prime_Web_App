@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/proprime
+      - SECRET_KEY=your-super-secret-key-change-in-production
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=changeme123
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+    networks:
+      - proprime-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - proprime-network
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=proprime
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - proprime-network
+
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - proprime-network
+
+volumes:
+  postgres_data:
+
+networks:
+  proprime-network:
+    driver: bridge

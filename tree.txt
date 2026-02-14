@@ -1,0 +1,56 @@
+Folder PATH listing for volume SSDDrive Win10 64
+Volume serial number is 2A00-D9FE
+C:.
+³   .env
+³   alembic.ini
+³   requirements.txt
+³   seed.py
+³   tree.txt
+³   
+ÃÄÄÄalembic
+³   ³   env.py
+³   ³   
+³   ÀÄÄÄversions
+³           initial_migration.py
+³           
+ÃÄÄÄapp
+³   ³   config.py
+³   ³   main.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄapi
+³   ³       auth.py
+³   ³       pages.py
+³   ³       social.py
+³   ³       systems.py
+³   ³       __init__.py
+³   ³       
+³   ÃÄÄÄcore
+³   ³       dependencies.py
+³   ³       security.py
+³   ³       __init__.py
+³   ³       
+³   ÃÄÄÄmodels
+³   ³       database.py
+³   ³       page.py
+³   ³       social.py
+³   ³       system.py
+³   ³       __init__.py
+³   ³       
+³   ÀÄÄÄschemas
+³           auth.py
+³           page.py
+³           social.py
+³           system.py
+³           __init__.py
+³           
+ÀÄÄÄvenv
+    ³   pyvenv.cfg
+    ³   
+    ÃÄÄÄInclude
+    ÃÄÄÄLib
+    ³   ÀÄÄÄsite-packages
+    ÀÄÄÄScripts
+            python.exe
+            pythonw.exe
+            

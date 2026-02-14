@@ -1,0 +1,25 @@
+app = "pro-prime-systems"
+
+[build]
+  dockerfile = "Dockerfile.backend"
+
+[env]
+  DATABASE_URL = "postgresql://postgres:postgres@pro-prime-db.internal:5432/proprime"
+  SECRET_KEY = "your-production-secret-key"
+  ADMIN_USERNAME = "admin"
+
+[[services]]
+  internal_port = 8000
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [[services.tcp_checks]]
+    interval = 10000
+    timeout = 2000
