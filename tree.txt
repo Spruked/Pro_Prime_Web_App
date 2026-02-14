@@ -1,56 +1,105 @@
 Folder PATH listing for volume SSDDrive Win10 64
 Volume serial number is 2A00-D9FE
 C:.
-³   .env
-³   alembic.ini
-³   requirements.txt
-³   seed.py
+³   .gitignore
+³   COPYRIGHT
+³   deploy.sh
+³   docker-compose.yml
+³   Dockerfile.backend
+³   Dockerfile.frontend
+³   fly.toml
+³   nginx.conf
+³   README.md
+³   render.yaml
+³   setup.sh
 ³   tree.txt
 ³   
-ÃÄÄÄalembic
-³   ³   env.py
+ÃÄÄÄbackend
+³   ³   .env
+³   ³   alembic.ini
+³   ³   requirements.txt
+³   ³   seed.py
 ³   ³   
-³   ÀÄÄÄversions
-³           initial_migration.py
-³           
-ÃÄÄÄapp
-³   ³   config.py
-³   ³   main.py
-³   ³   __init__.py
-³   ³   
-³   ÃÄÄÄapi
-³   ³       auth.py
-³   ³       pages.py
-³   ³       social.py
-³   ³       systems.py
-³   ³       __init__.py
-³   ³       
-³   ÃÄÄÄcore
-³   ³       dependencies.py
-³   ³       security.py
-³   ³       __init__.py
-³   ³       
-³   ÃÄÄÄmodels
-³   ³       database.py
-³   ³       page.py
-³   ³       social.py
-³   ³       system.py
-³   ³       __init__.py
-³   ³       
-³   ÀÄÄÄschemas
-³           auth.py
-³           page.py
-³           social.py
-³           system.py
-³           __init__.py
-³           
-ÀÄÄÄvenv
-    ³   pyvenv.cfg
+³   ÃÄÄÄalembic
+³   ³   ³   env.py
+³   ³   ³   
+³   ³   ÀÄÄÄversions
+³   ³           initial_migration.py
+³   ³           
+³   ÃÄÄÄapp
+³   ³   ³   config.py
+³   ³   ³   main.py
+³   ³   ³   __init__.py
+³   ³   ³   
+³   ³   ÃÄÄÄapi
+³   ³   ³       auth.py
+³   ³   ³       pages.py
+³   ³   ³       social.py
+³   ³   ³       systems.py
+³   ³   ³       __init__.py
+³   ³   ³       
+³   ³   ÃÄÄÄcore
+³   ³   ³       dependencies.py
+³   ³   ³       security.py
+³   ³   ³       __init__.py
+³   ³   ³       
+³   ³   ÃÄÄÄmodels
+³   ³   ³       database.py
+³   ³   ³       page.py
+³   ³   ³       social.py
+³   ³   ³       system.py
+³   ³   ³       __init__.py
+³   ³   ³       
+³   ³   ÀÄÄÄschemas
+³   ³           auth.py
+³   ³           page.py
+³   ³           social.py
+³   ³           system.py
+³   ³           __init__.py
+³   ³           
+³   ÀÄÄÄvenv
+³       ³   pyvenv.cfg
+³       ³   
+³       ÃÄÄÄInclude
+³       ÃÄÄÄLib
+³       ³   ÀÄÄÄsite-packages
+³       ÀÄÄÄScripts
+³               python.exe
+³               pythonw.exe
+³               
+ÀÄÄÄfrontend
+    ³   .env
+    ³   index.html
+    ³   package.json
+    ³   tailwind.config.js
+    ³   vite.config.js
     ³   
-    ÃÄÄÄInclude
-    ÃÄÄÄLib
-    ³   ÀÄÄÄsite-packages
-    ÀÄÄÄScripts
-            python.exe
-            pythonw.exe
-            
+    ÃÄÄÄpublic
+    ÀÄÄÄsrc
+        ³   App.jsx
+        ³   index.jsx
+        ³   main.jsx
+        ³   
+        ÃÄÄÄcomponents
+        ³   ÃÄÄÄAdmin
+        ³   ÃÄÄÄLayout
+        ³   ³       Footer.jsx
+        ³   ³       Header.jsx
+        ³   ³       
+        ³   ÀÄÄÄUI
+        ³           Button.jsx
+        ³           Card.jsx
+        ³           
+        ÃÄÄÄpages
+        ³       Admin.jsx
+        ³       Home.jsx
+        ³       Login.jsx
+        ³       SystemPage.jsx
+        ³       
+        ÃÄÄÄservices
+        ³       api.js
+        ³       auth.js
+        ³       
+        ÀÄÄÄstyles
+                globals.css
+                
